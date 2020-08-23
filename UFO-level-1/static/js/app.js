@@ -29,13 +29,13 @@ var button = d3.select('filter-btn')
 // search data with date inputs
 function clickSelect() {
     //don't refresh the page! 
-    d3.event.preventDefault();
+    d3.event.preventDefault()
     //print the value that was input 
-    console.log(dateForm.property('value'));
+    console.log(dateForm.property('value'))
     //create a new table with the filterd data only    
      var newTable = tableData.filter(sighting => sighting.datetime === dateForm.property('value')) 
 
-    displayData(newTable);
+    displayData(newTable)
 }
 
 // event handler
